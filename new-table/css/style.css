@@ -1,0 +1,75 @@
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+.main-menu{
+  padding-left: 0;
+  text-align: justify;
+  font-size: 0;
+  list-style: none;
+  font-size: grey;
+  border-radius: 3px;
+}
+.main-menu:after{
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+.maim-menu li{
+    position: relative;
+}
+.main-menu>li{
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+.main-menu>li:first-child{
+  border-left: none;
+}
+.main-menu>li:first-child:hover>a{
+  border-radius: 8px 0 0 8px;
+}
+.main-menu>li:last-child{
+  border-right: none;
+}
+.main-menu>li:last-child:hover>a{
+  border-radius: 0 8px 8px 0;
+}
+.main-menu li:hover a{
+  background-color: lightgrey;
+}
+.maim-menu a{
+  display: block;
+  padding: 5px 30px;
+  color: #fff;
+  text-decoration: none;
+}
+.main-menu li:hover .sub{
+    display: block;
+  }
+.sub{
+  position: absolute;
+  display: none;
+  padding-top: 10px;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+.sub ul{
+    padding-left: 0;
+    width: 250px;
+    list-style: none;
+    background-color: #fff;
+}
+.sub li:hover a{
+    background-color: orange;
+}
+.sub li:hover .second-sub{ 
+display: block;
+}
+.second-sub{
+position: absolute;
+display: none;
+padding-left: 10px;
+left: 100%;
+top: 0;
+}

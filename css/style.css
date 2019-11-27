@@ -1,0 +1,408 @@
+@font-face{
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.eot');
+    src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+body{
+margin: 0;
+font-family: "Arial", sans-serif;
+}
+h1,
+h2,
+h3{
+    font-family: 'Roboto Slab';
+    cursor: pointer;
+}
+.column{
+    width: 219px;
+    margin: 0 14px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.row{
+    margin: 0 -14px;
+    font-size: 0;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 960px;
+}
+sup{
+    font-size: 0.6em;
+}
+nav{
+    float: left;
+}
+nav a{
+    text-decoration: none;
+}
+nav li{
+    list-style: none;
+}
+.top-line{
+    background-color: #1f1f56;
+    padding: 18px 0;
+     }
+.top-menu,
+.social{
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.top-menu{
+    font-size: 14px;
+    }
+.top-menu li{
+    display: inline-block;
+    margin-right: 25px;
+   }
+.social li{
+    display: inline-block;
+    margin-left: 25px;
+   }
+.top-menu a{
+    color: #b1b1d2;
+}
+.top-menu li:hover a{
+    color: #fd8300
+}
+.social{
+    float: right;
+}
+.social a{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/sprite.png) no-repeat left top;
+}
+.social .fb{
+    width: 16px;
+    background-position: 0 0;
+}
+.social .fb:hover{
+    background-position: 0 -21px;
+}
+.social .tw{
+    background-position: -15px 0 ;
+}
+.social .tw:hover{
+    background-position: -15px -21px;
+}
+.social .in{
+    background-position: -36px 0 ;
+}
+.social .in:hover{
+    background-position: -36px -21px;
+}
+figure{
+    margin: 0;
+}
+.logo{
+    vertical-align: top;
+}
+.phones{
+    vertical-align: top;
+    font-size: 18px;
+}
+.phone,
+.mail,
+.skype{
+    position: relative;
+    }
+.phone:before,
+.mail::before,
+.skype:before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 18px;
+    left: -30px;
+    top: 3px;
+    background: url(../img/sprite.png) no-repeat -86px -44px;
+}
+.mail:before{
+    background: url(../img/sprite.png) no-repeat -63px -45px;
+}
+.skype:before{
+    background: url(../img/sprite.png) no-repeat -39px -64px;
+}
+.phones p{
+    padding-bottom: 7px;
+    margin: 0;
+    padding-left: 45px;
+}
+.phones a{
+    font-weight: bold;
+    color: #25252c;
+    text-decoration: none;
+}
+.phones a:hover{
+    color: #fd8300;
+}
+.header-contacts{
+    padding: 30px;
+    margin: 0;
+}
+.messengers{
+    padding-left: 50px;
+    vertical-align: top;
+    font-size: 16px;   
+    position: relative; 
+}
+.messengers::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    background-color: #e4e4ec;
+    left: ;
+}
+.messengers p{
+    padding-bottom: 10px;
+    margin: 0;
+    padding-left: 60 px;
+}
+.messengers a{
+    font-weight: normal;
+    color: #25252c;
+    text-decoration: none;
+}
+.messengers a:hover {
+    text-decoration: underline;
+    color: #fd8300;
+}
+.cta{
+    vertical-align: top;
+    font-size: 16px;    
+    text-align: right;
+}
+.cta a {
+    display: inline-block;
+    border: 2px solid #fd8300;
+    padding: 14px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #25252c;
+}
+.cta a:hover{
+    background-color: #fd8300;
+    color: #fff;
+}
+.special-proposition{
+    background-image: url(../img/background.jpg);
+    display: block;
+    padding: 50px 0 45px;
+    background-size: cover;
+}
+.proposition-title{
+    margin: 0;
+    text-transform: uppercase;
+    font: bold 30px "Roboto Slab";
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+}
+.proposition-diskription{
+    padding-top: 15px;
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+}
+.proposition-price{
+    padding-top: 15px;
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fd8300;
+}
+.aside-wrapper{
+    overflow: hidden;
+    border-radius: 3px;
+}
+.logo,
+.phones,
+.messengers,
+.cta{
+position: relative;
+}
+aside p{
+    margin: 0;
+    padding: 15px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    background-color: #1f1f56;
+}
+.sub-menu,
+.aside-menu{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    background-color: #e4e4ec;
+}
+.aside-menu a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #25252c;
+    font-family: "Arial"
+}
+.aside-menu li{
+    position: relative;
+}
+.aside-menu>li::before{
+    content: "";
+    position:absolute;
+    width: 8px;
+    height: 8px;
+    right: 15px;
+    top: 19px;
+    border-right: 2px solid #666; 
+    border-bottom: 2px solid #666;
+    transform: rotate(-45deg);
+    transition: all 1s ease;
+}
+.aside-menu>li:hover:before{
+    border-right-color: #fff; 
+    border-bottom-color: #fff;
+    transform: rotate(45deg);
+    top: 16px;
+}
+.aside-menu>li:hover>a{
+    background-color: #fd8300;
+    color: #fff;
+}
+.aside-menu>li:hover .sub-menu{
+    display: block;
+}
+.sub-menu{
+    display: none;
+}
+.sub-menu a{
+    color: #666;
+    padding-left: 30px;
+}
+.sub-menu li:hover a{
+    background-color: #cecedd;
+    color: #666;
+}
+.aside{
+    float: right;
+    padding-top: 35px;
+}
+.main{
+    margin: 0;
+    max-width: 713px;
+    display: inline-block;
+  }
+.content h1{
+    color: #24242b;
+    margin: 0;
+    padding: 45px 0 25px 0;
+}
+.content{
+    color: #666;
+    margin: 0;
+    padding-bottom: 35px;
+}
+.content p{
+    line-height: 1.7em;
+    padding-bottom: 20px;
+    margin: 0;
+}
+.more{
+    margin: 0;
+    font-weight: bold;
+    color: #fd8300;   
+}
+hr{
+    max-width: 713px;
+    margin: 0;
+    border-color: transparent;
+    border-bottom-color: #e4e4e4;
+}
+.footer-contacts ul{
+    font-size: 14px;
+}
+.h2{
+    font-size: 24px;
+    margin: 0;
+    padding-top: 30px;
+}
+.popular-projects h3{
+    padding-top: 15px;
+    margin: 0;
+    font-size: 14px;
+    color: #1f1f56;
+    font-weight: bold;
+}
+.popular-projects p{
+    padding-top: 8px;
+    margin: 0;
+    font-size: 13px;
+    color: #9999a6;
+}
+.popular-projects h3:hover{
+    text-decoration: underline;
+}
+.popular-projects{
+    margin: 0;
+    padding-bottom: 50px;
+}
+.footer-menu{
+    vertical-align: top;
+}
+.footer-menu ul{
+    margin: 0;
+    padding: 0;
+}
+.footer-menu li{
+    margin-bottom: 8px;
+    list-style: none;
+}
+.footer-menu a{
+    margin: 0;
+    text-decoration: none;
+    font-size: 14px;
+    color: #666;
+}
+.footer-menu a:hover{
+    color: #fd8300;
+    text-decoration: underline;
+}
+.footer-contacts{
+    padding: 40px 0 20px;
+    background-color: #ededf5;
+}
+.copy{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 20px;
+    background-color: #dcdce6;
+    color: #9999a6;
+    font-size: 13px;
+}
+.copy p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: content-box;
+}
